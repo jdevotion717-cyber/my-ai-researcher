@@ -37,8 +37,8 @@ with col1:
                 try:
                     genai.configure(api_key=api_key)
                     model = genai.GenerativeModel(
-                        model_name="gemini-1.5-pro",
-                        tools=[{"google_search_retrieval": {}}]
+                    model_name="gemini-1.5-flash", # pro 대신 flash로 변경!
+                    tools=[{"google_search_retrieval": {}}]
                     )
                     
                     # 사용자 맞춤형 지시사항 포함
